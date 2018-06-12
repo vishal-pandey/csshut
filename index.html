@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+</head>
+<body>
+	<div class="hut"></div>
+</body>
+</html>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.hut{
+		box-sizing: border-box;
+		position: absolute;
+		left: 50px;
+		top: 50px;
+		width: 92px;
+		height: 50px;
+		background-color: grey;
+		border-left: 50px solid lightgrey;
+		
+	}
+	.hut::before{
+		z-index: -1;
+		content: "";
+		position: absolute;
+		transform: rotate(-45deg);
+		top: -17px;
+		left: -43px;
+		width: 35.3px;
+		height: 35.3px;
+		background-color: grey;
+		box-shadow: 1px 1px grey,
+								2px 2px lightgrey,
+								3px 3px lightgrey,
+								4px 4px lightgrey,
+								5px 5px lightgrey,
+								6px 6px lightgrey,
+								7px 7px lightgrey,
+								8px 8px lightgrey,
+								9px 9px lightgrey,
+								10px 10px lightgrey,
+								12px 12px lightgrey,
+								13px 13px lightgrey,
+								14px 14px lightgrey,
+								15px 15px lightgrey,
+								16px 16px lightgrey,
+								17px 17px lightgrey,
+								18px 18px lightgrey,
+								19px 19px lightgrey,
+								20px 20px lightgrey,
+								21px 21px lightgrey,
+								22px 22px lightgrey,
+								23px 23px lightgrey,
+								24px 24px lightgrey,
+								25px 25px lightgrey,
+								26px 26px lightgrey,
+								27px 27px lightgrey,
+								28px 28px lightgrey,
+								29px 29px lightgrey,
+								30px 30px lightgrey;
+	}
+	.hut::after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 35px;
+		background-color: grey;
+		top: 15px;
+		left: -35px;
+
+	}
+</style>
